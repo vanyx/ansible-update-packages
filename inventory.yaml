@@ -1,0 +1,6 @@
+usersToCheck:
+ hosts:
+  serveur1:
+   ansible_host: XX.XX.XX.XX
+   ansible_user: root
+   ansible_ssh_pass: passwd

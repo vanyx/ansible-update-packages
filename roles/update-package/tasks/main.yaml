@@ -1,0 +1,7 @@
+- name: update for RHEL
+  import_tasks: update_redhat.yaml
+  when: ansible_facts['os_family']|lower == 'redhat'
+
+- name: update for Debian
+  import_tasks: update_debian.yaml
+  when: ansible_facts['os_family']|lower == 'debian'

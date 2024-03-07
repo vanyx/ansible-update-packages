@@ -1,0 +1,7 @@
+- name: Ansible playbook to update packets on serveurs
+  hosts: usersToCheck
+  become: yes
+  vars_files: 
+  - vars.yaml
+  roles:
+   - roles/update-package
