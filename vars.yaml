@@ -1,2 +1,4 @@
-package: "httpd"
+packages:
+  - httpd
+  - git
 makeupdate: true

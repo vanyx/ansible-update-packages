@@ -1,0 +1,10 @@
+- name: check all packages deprecated
+  yum:
+    list: updates
+  register: packages_found
+
+- name: Loop for each package
+  include_tasks: "redhat_update_each.yaml"
+  loop: "{{ packages }}"
+  loop_control:
+        loop_var: package
