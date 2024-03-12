@@ -1,4 +1,4 @@
-# ansible-handle-linux-packages
+# Ansible handle Linux packages
 
 - Edit inventory.yaml to add your servers
 
