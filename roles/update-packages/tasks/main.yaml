@@ -1,0 +1,10 @@
+- name: check all packages deprecated
+  ansible.builtin.package:
+    list: updates
+  register: packages_found
+
+- name: Loop for each package
+  include_tasks: "update_each.yaml"
+  loop: "{{ packages }}"
+  loop_control:
+        loop_var: package
